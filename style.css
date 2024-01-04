@@ -1,0 +1,1233 @@
+html{
+    background-color: rgb(234, 234, 234);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: rgb(120, 120, 120);
+}
+body{
+    overflow-x: hidden;
+    
+}
+.row{
+    display: flex;
+}
+
+/* HEADER */
+header{
+    background-color: rgb(255, 255, 255);
+    padding: 10px 0px;
+    margin: 0px -8px;
+    margin-top: -10px;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+}
+
+header input{
+    background-color: rgb(235, 242, 249);
+    border: 0px;
+    width: 700px;
+    height: 38px;
+    border-radius: 10px;
+    margin-left: 40px;
+    font-size: 16px;
+    color: black;
+    margin-top: 5px;
+    letter-spacing: 1px;
+    padding-left: 50px;
+    margin-right: 5px ;
+}
+.search img{
+    position: absolute;
+    left: 210px;
+    top: 2px;
+    height: 55px;
+}
+header img{
+    margin-top: 4px;
+    margin-left: 20px;
+}
+.logbtn{
+    width: 140px;
+    height: 40px;
+    border: none;
+    background-color: rgb(255, 255, 255);
+    font-size: 17px;
+    padding: 10px;
+    font-weight: 100;
+    border-radius: 5px;
+    
+}
+.loginbtn{
+    width: 140px;
+    height: 40px;
+    margin-top: 5px;
+    border-radius: 5px;
+    padding-bottom: 5px;
+}
+.down{
+    height: 10px;
+    position: absolute;
+    right: 30px;
+    top: 16px;
+}
+.up{
+    height: 10px;
+    position: absolute;
+    right: 30px;
+    top: 16px;
+    display: none;
+}
+
+.profile{
+    position: absolute;
+    right: 100px;
+    top: 9px;
+}
+.profilewhite{
+    display: none;
+    position: absolute;
+    right: 100px;
+    top: 9px;
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+.dropdown-cnt {
+    display: none;
+    position: relative;
+    background-color: #fffdfd;
+    width: 250px;
+    border-radius: 5px;
+    z-index: 1;
+}
+.notification{
+    position: absolute;
+}
+.cust{
+    border-bottom: 1px solid rgb(154, 154, 154);
+}
+.signup{
+    margin-left: 45px;
+    color: #1360dd;
+    font-weight: 500;
+}
+.dropdown-cnt a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+.dropdown-cnt{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+.dropdown-cnt a:hover {
+    background-color: #efefef;
+}
+.dropdown:hover .dropdown-cnt {
+    display: block;
+}
+
+.dropdown:hover .logbtn {
+    background-color: #1360dd;
+    color: white;
+}
+.loginbtn:hover .profile {
+    display: none;
+}
+.dropdown-cnt:hover .profile{
+    display: none;
+}
+.loginbtn:hover .profilewhite {
+    display: inline;
+}
+.dropdown-cnt:hover .profilewhite{
+    display: inline;
+}
+.loginbtn:hover .down {
+    display: none;
+}
+.dropdown-cnt:hover .down{
+    display: none;
+}
+.loginbtn:hover .up {
+    display: inline;
+}
+.dropdown-cnt:hover .up{
+    display: inline;
+}
+.nav1 {
+    text-decoration: none;
+    color: black;
+    font-size: 17px;
+    margin: 8px 42px;
+    padding: 0px 5px;
+    position: absolute;
+    left: 1140px;
+    top: 15px;
+    
+}
+.nav2 {
+    text-decoration: none;
+    color: black;
+    font-size: 17px;
+    margin: 8px 42px;
+    padding: 0px 5px;
+    position: absolute;
+    left: 1250px;
+    top: 15px;
+    
+}
+.navimg1{
+    position: absolute;
+    left: -50px;
+    top: -10px;
+    padding: 5px;
+}
+.navimg2{
+    position: absolute;
+    left: -50px;
+    top: -9px;
+    padding: 5px;
+}
+.threedot{
+    border: none;
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    margin-top: 10px;
+    margin-left: 330px;
+}
+
+.dropdown-cnt1 {
+    left: 150px;
+    top: 40px;
+    display: none;
+    position: absolute;
+    background-color: #fffdfd;
+    width: 240px;
+    border-radius: 5px;
+    z-index: 1;
+}
+
+.dropdown-cnt1 a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+.dropdown-cnt1{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+.dropdown-cnt1 a:hover {
+    background-color: #efefef;
+}
+.dropdown:hover .dropdown-cnt1 {
+    display: block;
+}
+
+
+/* Category */
+.category{
+    background-color: white;
+    height: 130px;
+    margin-top: 50px;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-left: 100px;
+    font-weight: 600;
+    font-size: 14px;
+}
+.category a{
+    text-decoration: none;
+    color: black;
+    padding-top: 90px;
+    padding-left: 50px;
+    
+}
+.grocery{
+    position: absolute;
+    top: 100px;
+    height: 65px;
+}
+.down1{
+    height: 10px;
+    padding-top: 7px;
+    padding-left: 5px;
+}
+.down2{
+    height: 10px;
+    padding-top: 7px;
+    padding-left: 5px;
+}
+.down3{
+    height: 10px;
+    padding-top: 7px;
+    padding-left: 5px;
+}
+.down4{
+    height: 10px;
+    padding-top: 7px;
+    padding-left: 5px;
+}
+.down5{
+    height: 10px;
+    padding-top: 7px;
+    padding-left: 5px;
+}
+.blueup1{
+    height: 12px;
+    top: 97px;
+    left: 102.5px;
+    position: absolute;
+    display: none;
+}
+.blueup2{
+    height: 12px;
+    top: 97px;
+    left: 122px;
+    position: absolute;
+    display: none;
+}
+.blueup3{
+    height: 12px;
+    top: 97px;
+    left: 168px;
+    position: absolute;
+    display: none;
+}
+.blueup4{
+    height: 12px;
+    top: 97px;
+    left: 184px;
+    position: absolute;
+    display: none;
+}
+.blueup5{
+    height: 12px;
+    top: 97px;
+    left: 142.5px;
+    position: absolute;
+    display: none;
+}
+
+/* Fashion */
+.fashionbtn{
+    display: flex;
+    position: absolute;
+    padding: 10px;
+    left: 40px;
+}
+.fashion{
+    position: relative;
+    display: inline-block;
+}
+.dropdown-cnt2 {
+    position: absolute;
+    background-color: #fffdfd;
+    top: 115px;
+    left: -80px;
+    display: none;
+    width: 220px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    font-weight: 100;
+    font-size: 14px;
+}
+.dropdown-cnt2 a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+.dropdown-cnt2_1 {
+    position: absolute;
+    background-color: #fffdfd;
+    top: 0px;
+    left: 220px;
+    width: 270px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    font-weight: 100;
+    font-size: 14px;
+    display: none;
+}
+.dropdown-cnt2_1 a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-cnt2_1 a:hover {
+    background-color: aliceblue;
+    font-weight: 500;
+}
+.menstop:hover .dropdown-cnt2_1{
+    display: block;
+}
+
+
+.dropdown-cnt2_2 {
+    position: absolute;
+    background-color: #fffdfd;
+    top: 0px;
+    left: 220px;
+    display: none;
+    width: 270px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    font-weight: 100;
+    font-size: 14px;
+}
+.dropdown-cnt2_2 a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+.mensbottom:hover .dropdown-cnt2_2{
+    display: block;
+}
+
+.dropdown-cnt2_3 {
+    position: absolute;
+    background-color: #fffdfd;
+    top: 0px;
+    left: 220px;
+    display: none;
+    width: 270px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    font-weight: 100;
+    font-size: 14px;
+}
+.dropdown-cnt2_3 a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+.womensethnic:hover .dropdown-cnt2_3{
+    display: block;
+}
+.dropdown-cnt2_4 {
+    position: absolute;
+    background-color: #fffdfd;
+    top: 0px;
+    left: 220px;
+    display: none;
+    width: 270px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    font-weight: 100;
+    font-size: 14px;
+}
+.dropdown-cnt2_4 a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+.womenwestern:hover .dropdown-cnt2_4{
+    display: block;
+}
+.dropdown-cnt2_5 {
+    position: absolute;
+    background-color: #fffdfd;
+    top: 0px;
+    left: 220px;
+    display: none;
+    width: 270px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    font-weight: 100;
+    font-size: 14px;
+}
+.dropdown-cnt2_5 a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+.mensfootwear:hover .dropdown-cnt2_5{
+    display: block;
+}
+.dropdown-cnt2_6 {
+    position: absolute;
+    background-color: #fffdfd;
+    top: 0px;
+    left: 220px;
+    display: none;
+    width: 270px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    font-weight: 100;
+    font-size: 14px;
+}
+.dropdown-cnt2_6 a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+.womensfootwear:hover .dropdown-cnt2_6{
+    display: block;
+}
+.dropdown-cnt2_7 {
+    position: absolute;
+    background-color: #fffdfd;
+    top: 0px;
+    left: 220px;
+    display: none;
+    width: 270px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    font-weight: 100;
+    font-size: 14px;
+}
+.watches:hover .dropdown-cnt2_7{
+    display: block;
+}
+.dropdown-cnt2_7 a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+.dropdown-cnt2_8 {
+    position: absolute;
+    background-color: #fffdfd;
+    top: 0px;
+    left: 220px;
+    display: none;
+    width: 270px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    font-weight: 100;
+    font-size: 14px;
+}
+.dropdown-cnt2_8 a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+.bags:hover .dropdown-cnt2_8{
+    display: block;
+}
+.dropdown-cnt2_9 {
+    position: absolute;
+    background-color: #fffdfd;
+    top: 0px;
+    left: 220px;
+    display: none;
+    width: 270px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    font-weight: 100;
+    font-size: 14px;
+}
+.dropdown-cnt2_9 a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+.kids:hover .dropdown-cnt2_9{
+    display: block;
+}
+.dropdown-cnt2_10 {
+    position: absolute;
+    background-color: #fffdfd;
+    top: 0px;
+    left: 220px;
+    display: none;
+    width: 270px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    font-weight: 100;
+    font-size: 14px;
+}
+.dropdown-cnt2_10 a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+.essentials:hover .dropdown-cnt2_10{
+    display: block;
+}
+.dropdown-cnt2_11 {
+    position: absolute;
+    background-color: #fffdfd;
+    top: 0px;
+    left: 220px;
+    display: none;
+    width: 270px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    font-weight: 100;
+    font-size: 14px;
+}
+.dropdown-cnt2_11 a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+.winter:hover .dropdown-cnt2_11{
+    display: block;
+}
+.dropdown-cnt2 a:hover {
+    background-color: aliceblue;
+    font-weight: 500;
+}
+.fashion:hover .dropdown-cnt2 {
+    display: block;
+}
+.fashion:hover .fashionbtn{
+    color: #1360dd;
+}
+.fashion:hover .down1 , .dropdown-cnt2:hover .down1{
+    display: none;
+}
+
+.fashion:hover .blueup1 {
+    display: inline;
+}
+.dropdown-cnt2:hover .blueup1{
+    display: inline;
+}
+
+
+/* Electronics */
+.electronicsbtn{
+    display: flex;
+    position: absolute;
+    left: 160px;
+    padding-bottom: 10px;
+}
+.electronics{
+    position: relative;
+    display: inline-block;
+}
+.dropdown-cnt3 {
+    position: absolute;
+    background-color: #fffdfd;
+    top: 115px;
+    left: 160px;
+    display: none;
+    width: 250px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    font-weight: 100;
+    font-size: 14px;
+}
+.dropdown-cnt3 a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+.dropdown-cnt3 a:hover {
+    background-color: aliceblue;
+    font-weight: 500;
+}
+.electronics:hover .dropdown-cnt3 {
+    display: block;
+}
+.electronics:hover .electronicsbtn{
+    color: #1360dd;
+}
+.electronics:hover .down2 {
+    display: none;
+}
+.dropdown-cnt3:hover .down2{
+    display: none;
+}
+.electronics:hover .blueup2 {
+    display: inline;
+}
+.dropdown-cnt3:hover .blueup2{
+    display: inline;
+}
+
+
+/*Home*/
+.homebtn{
+    display: flex;
+    position: absolute;
+    left: 290px;
+    padding-bottom: 10px;
+    width: 200px;
+}
+
+.home{
+    position: relative;
+    display: inline-block;
+}
+.dropdown-cnt4 {
+    position: absolute;
+    background-color: #fffdfd;
+    top: 115px;
+    left: 310px;
+    display: none;
+    width: 250px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    font-weight: 100;
+    font-size: 14px;
+}
+.dropdown-cnt4 a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+.dropdown-cnt4 a:hover {
+    background-color: aliceblue;
+    font-weight: 500;
+}
+.home:hover .dropdown-cnt4 {
+    display: block;
+}
+.home:hover .homebtn{
+    color: #1360dd;
+}
+.home:hover .down3 {
+    display: none;
+}
+.dropdown-cnt4:hover .down3{
+    display: none;
+}
+.home:hover .blueup3 {
+    display: inline;
+}
+.dropdown-cnt4:hover .blueup3{
+    display: inline;
+}
+
+/*Toys*/
+
+.toysbtn{
+    display: flex;
+    position: absolute;
+    width: 200px;
+    padding-bottom: 10px;
+}
+
+.toys{
+    position: relative;
+    display: inline-block;
+}
+.dropdown-cnt5 {
+    position: absolute;
+    background-color: #fffdfd;
+    top: 115px;
+    left: 40px;
+    display: none;
+    width: 250px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    font-weight: 100;
+    font-size: 14px;
+}
+.dropdown-cnt5 a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+.dropdown-cnt5 a:hover {
+    background-color: aliceblue;
+    font-weight: 500;
+}
+.toys:hover .dropdown-cnt5 {
+    display: block;
+}
+.toys:hover .toysbtn{
+    color: #1360dd;
+}
+.toys:hover .down4 {
+    display: none;
+}
+.dropdown-cnt4:hover .down4{
+    display: none;
+}
+.toys:hover .blueup4 {
+    display: inline;
+}
+.dropdown-cnt5:hover .blueup4{
+    display: inline;
+}
+
+
+/*Vehicle*/
+.vehiclebtn{
+    display: flex;
+    position: absolute;
+    left: 190px;
+    width: 130px;
+    padding-bottom: 10px;
+}
+.vehicle{
+    position: relative;
+    display: inline-block;
+}
+.dropdown-cnt6 {
+    position: absolute;
+    background-color: #fffdfd;
+    top: 115px;
+    left: 240px;
+    display: none;
+    width: 250px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    font-weight: 100;
+    font-size: 14px;
+}
+.dropdown-cnt6 a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+.dropdown-cnt6 a:hover {
+    background-color: aliceblue;
+    font-weight: 500;
+}
+.vehicle:hover .dropdown-cnt6 {
+    display: block;
+}
+.vehicle:hover .vehiclebtn{
+    color: #1360dd;
+}
+.vehicle:hover .down5 {
+    display: none;
+}
+.dropdown-cnt6:hover .down5{
+    display: none;
+}
+.vehicle:hover .blueup5 {
+    display: inline !important;
+}
+.dropdown-cnt6:hover .blueup5{
+    display: inline !important;
+}
+
+/*Slider*/
+.slider{
+    background-color: white;
+    width: 100%;
+    margin: 0px -10px;
+    
+}
+.sliderimg{
+    width: 100%;
+}
+
+.sliderimg img{
+    width: 100%;
+}
+.block1 {
+    position: absolute;
+    top: 230px;
+    left: -30px;
+}
+.block2 {
+    position: absolute;
+    top: 230px;
+    left: 1501px;
+}
+.leftbtn{
+    border: none;
+    background-color: rgb(255, 255, 255);
+    margin-top: 80px;
+    height: 80px;
+    position: absolute;
+    width: 40px;
+    left: 20px;
+    border-top-right-radius: 7px;
+    border-bottom-right-radius: 7px;
+    font-size: 22px;
+    box-shadow: 0px 0px 5px rgb(205, 205, 205) ;
+    cursor: pointer;
+    z-index: 1;
+}
+.rightbtn{
+    border: none;
+    background-color: white;
+    height: 80px;
+    left: 1462px;
+    top: 315px;
+    position: absolute;
+    width: 40px;
+    border-top-left-radius: 7px;
+    border-bottom-left-radius: 7px;
+    font-size: 22px;
+    box-shadow: 0px 0px 5px rgb(205, 205, 205) ;
+    cursor: pointer;
+    
+}
+
+.ovalbg {
+    height: 15px;
+    width: 50px;
+    background-color: rgba(255, 255, 255, 0.414);
+    border-radius: 80px;
+    position: absolute;
+    top: 450px;
+    left: 750px;
+}
+.row1 {
+    display: flex;
+    padding: auto;
+    color: rgb(69, 69, 69);
+    padding-left: 8px;
+    font-size: 5px;
+    padding-top: 3.8px;
+    
+}
+.o {
+    background-color: rgb(69, 69, 69);
+    border-radius: 50%;
+    padding: 0px 2.5px;
+    margin-right: 5px;
+}
+.o1 {
+    position: absolute;
+    background-color: white;
+    border-radius: 5px;
+    color: white;
+    padding: 0px 3px;
+    height: 8px;
+    width: 8px;
+    margin-left: -3px;
+    
+}
+
+/*Best of Electronics*/
+.BestOfElectronics{
+    background-color: white;
+    height: 355px;
+    width: 1245px;
+    margin: 0px 10px;
+}
+.BestOfElectronics h1 {
+    padding-top: 25px;
+    padding-left: 15px;
+    font-weight: 500;
+    font-size: 22px;
+    color: black;
+}
+.flight{
+    width: 225px;
+    position: relative;
+    top: -335px;
+    left: 1255px;
+    
+}
+.electronicsimg {
+    width: 1815px;
+    margin-left: 17px;
+}
+.products {
+    border: 1px solid rgb(212, 212, 212);
+    background-color: white;
+    border-radius: 3px;
+    margin-right: 10px;
+    padding-top: 200px;
+    height: 65px;
+    width: 200px;
+    text-align: center;
+}
+.products img{
+    width: 190px;
+    position: absolute;
+    margin: auto;
+    margin-top: -200px;
+    margin-left: -30px;
+}
+
+.electronicsimg img:hover{
+    width: 193px;
+    margin: auto;
+    margin-top: -200px;
+    margin-left: -30px;
+} 
+
+.BestOfElectronics button{
+    border: none;
+    background-color: rgb(255, 255, 255);
+    margin-top: 80px;
+    height: 80px;
+    position: absolute;
+    width: 40px;
+    font-size: 22px;
+    box-shadow: 0px 0px 5px rgb(205, 205, 205) ;
+    z-index: 1;
+    cursor: pointer;
+}
+.leftbtn1{
+    border-top-right-radius: 7px;
+    border-bottom-right-radius: 7px;
+    display: none;
+    z-index: -1;
+}
+.rightbtn1{
+    border-top-left-radius: 7px;
+    border-bottom-left-radius: 7px;
+}
+.block3{
+    position: absolute;
+    left: 1260px;
+    width: 50%;
+    height: 53%;
+    top: 484.5px;
+}
+.block4 {
+    position: absolute;
+    top: 480px;
+    left: -57px;
+}
+.best{
+    text-align: center;
+    text-decoration: none;
+    color: black;
+}
+.morebtn{
+    background-color: #1360dd;
+    text-decoration: none;
+    color: white;
+    border-radius: 50%;
+    position: absolute;
+    top: 520px;
+    left: 1220px;
+    padding: 1px 8px;
+    padding-bottom: 5px;
+}
+
+/*Beauty*/
+.beauty{
+    background-color: white;
+    height: 355px;
+    width: 1480px;
+    margin: 0px 10px;
+    margin-top: -20px;
+}
+.beauty h1 {
+    padding-top: 25px;
+    padding-left: 15px;
+    font-weight: 500;
+    font-size: 22px;
+    color: black;
+}
+
+.beauty button{
+    border: none;
+    background-color: rgb(255, 255, 255);
+    margin-top: 80px;
+    height: 80px;
+    position: absolute;
+    width: 40px;
+    font-size: 22px;
+    box-shadow: 0px 0px 5px rgb(205, 205, 205) ;
+    z-index: 1;
+    cursor: pointer;
+}
+.leftbtn2{
+    border-top-right-radius: 7px;
+    border-bottom-right-radius: 7px;
+    display: none;
+    z-index: -1;
+}
+.rightbtn2{
+    border-top-left-radius: 7px;
+    border-bottom-left-radius: 7px;
+}
+.beautyimg {
+    width: 1815px;
+    margin-left: 17px;
+}
+.beautyimg img:hover{
+    width: 193px;
+    margin: auto;
+    margin-top: -200px;
+    margin-left: -30px;
+} 
+.block5{
+    
+    position: absolute;
+    top: 860px;
+    left: -57px;
+}
+.block6{
+    position: absolute;
+    top: 860px;
+    left: 1498px;
+}
+.more1{
+    background-color: #1360dd;
+    text-decoration: none;
+    color: white;
+    border-radius: 50%;
+    position: absolute;
+    top: 898px;
+    left: 1450px;
+    padding: 1px 8px;
+    padding-bottom: 5px;
+}
+
+/* Sports */
+
+.leftbtn3{
+    border-top-right-radius: 7px;
+    border-bottom-right-radius: 7px;
+    display: none;
+    z-index: -1;
+}
+.rightbtn3{
+    border-top-left-radius: 7px;
+    border-bottom-left-radius: 7px;
+}
+.sportimg {
+    width: 1815px;
+    margin-left: 17px;
+}
+.sportimg img:hover{
+    width: 193px;
+    margin: auto;
+    margin-top: -200px;
+    margin-left: -30px;
+} 
+.block7{
+    
+    position: absolute;
+    top: 1230px;
+    left: -57px;
+}
+.block8{
+    position: absolute;
+    top: 1230px;
+    left: 1498px;
+    
+}
+.more2{
+    background-color: #1360dd;
+    text-decoration: none;
+    color: white;
+    border-radius: 50%;
+    position: absolute;
+    top: 1270px;
+    left: 1450px;
+    padding: 1px 8px;
+    padding-bottom: 5px;
+}
+
+/* Top Stories */
+.top_stories a, p{
+    font-size: 13px;
+    text-decoration: none;
+    color: rgb(120, 120, 120);
+    
+}
+.top_stories{
+    margin-left: 10px;
+}
+
+/*Footer*/
+footer{
+    background-color: rgb(35, 35, 35);
+    color: white;
+    margin: -10px;
+    
+}
+.foot1 h3{
+    font-weight: 400;
+    color: rgb(169, 168, 168);
+    font-size: 13px;
+}
+.foot1 a{
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 12px;
+}
+.foot1{
+    margin-left: 90px;
+    padding-top: 30px;
+}
+.foot1 div{
+    padding-right: 0px;
+    width: 200px;
+}
+.line div{
+    margin-bottom: -6px;
+    color: rgb(160, 207, 251);
+    font-weight: 100;
+}
+.address{
+    margin-left: -150px;
+}
+
+.address p{
+    color: white;
+}
+.address a{
+    color: #1360dd;
+}
+.address1 p{
+    color: white;
+}
+.address1{
+    margin-left: 50px;
+}
+hr{
+    border: 1px solid rgb(154, 206, 252);
+}
+.foot2{
+    margin-left: 100px;
+}
+.foot2 a{
+    text-decoration: none;
+    color: white;
+    font-size: 12px;
+    padding-right: 110px;
+}
+.foot2 p{
+    color: white;
+    margin-top: -1px;
+}
+.foot2 img{
+    margin-left: 110px;
+    margin-top: -7px;
+}
+.footlogo{
+    position: absolute;
+    top: 2226px;
+}
+header{
+    background-color: rgb(255, 255, 255);
+    padding: 10px 0px;
+    margin: 0px -8px;
+    margin-top: -10px;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+}
